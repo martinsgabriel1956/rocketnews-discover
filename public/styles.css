@@ -1,0 +1,135 @@
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body-bg-color);
+  font-family: "Spartan", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.main-content {
+  padding: 2.25rem;
+}
+
+.main-content > img {
+  width: 400px;
+  margin-bottom: 3rem;
+}
+
+.apresentation > h3 {
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.apresentation > h5 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.apresentation > p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+}
+
+.form-container {
+  width: 54%;
+  position: absolute;
+  z-index: 10;
+}
+
+.form-container > label {
+  color: var(--form-color);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+
+  width: 100%;
+}
+
+.input-container::before {
+  content: "";
+  background-color: var(--title-color);
+  width: 6px;
+  height: 48px;
+
+  margin-left: 2px;
+}
+
+.input-container > input {
+  height: 48px;
+  
+  padding-left: 1rem;
+  border: 0;
+  
+  width: 100%;
+}
+
+.input-container > input::placeholder {
+  font-weight: normal;
+  color: var(--form-color);
+}
+
+.input-container > button {
+  height: 48px;
+  width: 48px;
+
+  background: var(--bg-button-color);
+  border: 0;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container > a {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+
+  text-decoration: none;
+  color: var(--bg-button-color);
+}
+
+.form-container > a > img {
+  margin-left: .5rem;
+}
+
+.img-background {
+  background-image: url(../assets/read_news.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+input,
+h3 {
+  font-family: "Work Sans", sans-serif;
+}
